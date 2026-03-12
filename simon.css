@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self:center;
+    height: 500px;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
+    border: 5px solid black;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: blue;
+}
+
+.flash {
+    background-color: white;
+}
+.userFlash {
+    background-color: black;
+}
+.gameOver {
+    background-color: red;
+}
+
