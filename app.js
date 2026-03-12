@@ -73,7 +73,7 @@ for (btn of allBtns) {
 }
 
 function reset() {
-    h3.innerText = `Highest Score is ${level}!`
+    // h3.innerText = `Highest Score is ${level}!`
     h2.innerHTML = `Game Over! Your score was ${level}! <br> Press any key to start the game again`;
     started = false; 
     level = 0;

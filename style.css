@@ -33,13 +33,15 @@ body {
     background-color: blue;
 }
 
+
 .flash {
     background-color: white;
 }
 .userFlash {
-    background-color: black;
+    background-color: darkcyan;
 }
 .gameOver {
     background-color: red;
 }
+
 
