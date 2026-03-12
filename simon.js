@@ -83,7 +83,3 @@ function reset() {
         body.classList.remove("gameOver");
     }, 300);
 }
-
-if(level >= level) {
-    level = level;
-}
