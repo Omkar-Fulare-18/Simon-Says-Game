@@ -1,5 +1,9 @@
 let gameSeq = [];
 let userSeq = [];
+let scores = [];
+let largest = 0; 
+
+
 
 let btns = ["red", "green", "yellow", "blue"];
 
@@ -7,7 +11,8 @@ let started = false;
 let level = 0;
 let h2 = document.querySelector("h2");
 let body = document.querySelector("body")
-let h3 = document.querySelector("h3");
+let highscore = document.querySelector(".highscore");
+
 
 
 document.addEventListener("keydown", function() {
@@ -72,10 +77,17 @@ for (btn of allBtns) {
     btn.addEventListener("click", btnPress);
 }
 
+
+
 function reset() {
-    // h3.innerText = `Highest Score is ${level}!`
-    h2.innerHTML = `Game Over! Your score was ${level}! <br> Press any key to start the game again`;
+    
+    h2.innerHTML = `Game Over! Your score was ${level-1}! <br> Press any key to start the game again`;
     started = false; 
+    console.dir(largest);
+    console.dir(scores);
+    scores.push(level-1);
+    largest = Math.max(...scores);
+    highscore.innerText = `Highest Score is ${largest}!`
     level = 0;
     gameSeq = [];
     body.classList.add("gameOver");
